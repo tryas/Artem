@@ -60,6 +60,7 @@ class Xerox(Equipment):
 
 
 my_printer = Printer(brand='Epson', serial_number=123456789, color=None, model='FX100')
+my_printer2 = Printer(brand='Canon', serial_number=None, color=True, model='R800')
 print(my_printer, my_printer.brand, my_printer.model, my_printer.color, my_printer.serial_number)
 
 my_scaner = Scaner('Canon', 'HG-18', 32, 987654321)
@@ -69,5 +70,8 @@ my_xerox = Xerox('Xerox', 'RT-19', True, 123498765)
 print(my_xerox, my_xerox.brand, my_xerox.model, my_xerox.document_feeder, my_xerox.serial_number)
 
 my_store = Store()
-my_store.push(1,2)
+my_store.push(my_printer, 1)
+my_store.push(my_printer2, 1)
+
 my_printer.print_obj()
+my_printer2.print_obj()
