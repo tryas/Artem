@@ -73,6 +73,5 @@ my_store = Store()
 my_store.push(my_printer, 1)
 my_store.push(my_printer2, 1)
 
-
 my_printer.print_obj()
 my_printer2.print_obj()
